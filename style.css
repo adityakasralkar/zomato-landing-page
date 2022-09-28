@@ -529,3 +529,132 @@
         flex: 1;
     }
 }
+
+
+.footer{
+    width: 100%;
+}
+
+.footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.footer_section1 img{
+    width: 120px;
+    height: auto;
+}
+
+.section1__buttonContainer{
+    display: flex;
+    gap: 16px;
+}
+
+.section1__buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.navigation_container{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    padding: 48px 0;
+}
+
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.link__container h5{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer__link:hover{
+    color: black;
+}
+
+.social__link_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social__link_container button{
+    background-color: black;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__link_container button i {
+    color: white;
+    font-size: 13px;
+}
+
+.footer__store_logos{
+    width: 70%;
+}
+
+
+.footer .copyright{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 ;
+    font-size: 13px;
+    font-weight: 300;
+    color: gray;
+    border-top: 1px solid lightgray;
+}
+
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .navigation_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+    .navigation_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer_section1{
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+}
