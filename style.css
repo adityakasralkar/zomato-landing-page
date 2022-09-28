@@ -410,3 +410,122 @@
         flex-direction: column;
     }
 }
+
+
+/* ASSIGNMENT-1 [POPULAR LOCATION] */
+.popular_location h1{
+    font-weight: 400;
+    font-size: 24px
+}
+
+.popular_location h1 b{
+    font-weight: 600;
+}
+
+.popular__location{
+    width: 100%;
+    background-color: rgba(244, 244, 244, 0.5);
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+
+.popular__location h4{
+    font-weight: 400;
+}
+
+.popular__location div{
+    width: 30%;
+    border: 0.05px solid rgba(211, 211, 211, 0.5);
+    border-radius: 8px ;
+    padding: 4px;
+    display: flex;
+    background-color: white;
+    margin: 0 10px;
+}
+
+
+.popular__location .pop_loc9 .data ,
+.popular__location .pop_loc9 .arrows{
+    height: 100%;
+    margin: auto;
+    padding: 13px;
+}
+
+
+.popular__location .data{
+    flex: 4;
+    flex-direction: column;
+    border: none;
+}
+
+.popular__location .data h4{
+    font-size: 17px;
+    font-weight: 350px;
+}
+
+.popular__location .data p{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.popular__location .arrows{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+@media only screen and (max-width: 450px){
+    .popular__location div{
+        width: 100;
+        margin: 0;
+    }
+
+    .popular__location .data{
+        flex: 4;
+    }
+    .popular__location .arrows{
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .popular__location div{
+       width: 33%;
+    }
+
+    .popular__location{
+        padding: 10px;
+    }
+    .popular__location .data{
+        flex: 4;
+    }
+    .popular__location .arrows{
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .popular__location div{
+       width: 40%;
+       display: flex;
+    }
+
+    .popular__location{
+        padding: auto;
+    }
+    .popular__location .data{
+        flex: 4;
+    }
+    .popular__location .arrows{
+        flex: 1;
+    }
+}
